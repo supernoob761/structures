@@ -1,28 +1,30 @@
 #include <stdio.h>
-struct Shape {
+struct circle {
 int length;
 int width;
 int area;
 };
 int declare_area(int length, int width){
 int area=length*width;
+return area;
 }
 
 
 int main(){
-struct Shape s1;
+struct circle *s1;
+
 printf("length (with m): ");
-scanf("%d", &s1.length);
+scanf("%d", &s1->length);
 
  printf("width,(with m): ");
-scanf("%d", &s1.width);
-s1.area=declare_area(s1.length,s1.width);
+scanf("%d", &s1->width);
+s1->area=declare_area(s1->length,s1->width);
 
 
 printf("------------OutPut------------------\n\n");
-printf("length = %d\n",s1.length);
-printf("width = %d\n",s1.width);
-printf("area = %d\n\n",s1.area);
+printf("length = %d\n",s1->length);
+printf("width = %d\n",s1->width);
+printf("area = %d\n\n",s1->area);
 printf("------------------------------------");
 
 return 0;
