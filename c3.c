@@ -1,5 +1,5 @@
 #include <stdio.h>
-struct circle {
+struct Rectangle {
 int length;
 int width;
 int area;
@@ -11,7 +11,7 @@ return area;
 
 
 int main(){
-struct circle *s1;
+struct Rectangle *s1;
 
 printf("length (with m): ");
 scanf("%d", &s1->length);

@@ -14,10 +14,18 @@ void define_book(struct Book* p1, int year, const char* title, const char* autho
 
 int main(){
 struct Book p2;
-
+char Name[100];
+char Author[100];
+int date;
+printf("Name : ");
+fgets(Name,sizeof(Name),stdin);
+printf("author : ");
+fgets(Author,sizeof(Author),stdin);
+printf("Date : ");
+scanf("%d",&date);
 define_book(&p2,2006,"God Help This Dying World","Phoenix Backer");
 
-printf("Year : %d\n",p2.Year);
+printf("\nYear : %d\n",p2.Year);
 printf("Title : %s\n",p2.Title);
 printf("author : %s\n",p2.author);
 
